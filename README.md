@@ -23,19 +23,18 @@ Binary classification of movie reviews (positive vs negative) using the [IMDB La
 
 ## File Overview
 src/
-main.py                   # runs experiments, plots results
-Naives.py                 # custom Naive Bayes
-LogisticRegresion.py      # logistic regression baseline
-LogisticRegresionimpl.py  # improved logistic regression
-AdaBoost.py               # custom AdaBoost
-sklearn_adaboost.py       # scikit-learn AdaBoost
-mlp_word_embedings.py     # MLP with embeddings (Keras)
+- main.py                   # runs experiments, plots results
+- Naives.py                 # custom Naive Bayes
+- LogisticRegresion.py      # logistic regression baseline
+- LogisticRegresionimpl.py  # improved logistic regression
+- AdaBoost.py               # custom AdaBoost
+- sklearn_adaboost.py       # scikit-learn AdaBoost
+- mlp_word_embedings.py     # MLP with embeddings (Keras)
 
 ## Results
 - Custom models reached ~0.61 max test accuracy
 - MLP (Keras) achieved ~0.86 test accuracy
-- 
-Metrics reported: Accuracy, Precision, Recall, F1 for increasing training sizes  
+- Metrics reported: Accuracy, Precision, Recall, F1 for increasing training sizes  
 `[500, 2500, 4500, 6500, ..., 24500]`
 
 ## How to Run
