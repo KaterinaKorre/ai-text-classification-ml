@@ -1,0 +1,17 @@
+name: CI (Python IMDB)
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install deps (light)
+        run: pip install numpy scikit-learn matplotlib
+      - name: Import check
+        run: python -c "import numpy,sklearn,matplotlib; print('ok')"
